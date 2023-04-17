@@ -1,0 +1,11 @@
+.acto{
+    background-color: bisque;
+
+}
+#highlight > div{
+    background-color:rgb(255, 0, 0)
+}
+
+#highlight + a > div{
+    background-color: yellow
+}
