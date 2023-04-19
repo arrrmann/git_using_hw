@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,10 +9,19 @@
     <link rel="stylesheet" href="style/styles.css">
     <script src="scripts/event.js"></script>
 </head>
+
 <body>
-    <p>plese enter at least 5 carectares</p>
-    <!-- <input onchange=" validate() " type="text" id="username"> -->
-    <input oninput=" validate() " type="text" id="username">
+
+    <form class="form_div" onsubmit="return submitData()">
+        <input onchange=" setData('name') " type="text" id="name" placeholder="name">
+        <input onchange=" setData('image') " type="text" id="image" placeholder="image">
+        <input onchange=" setData('link') " type="text" id="link" placeholder="link ">
+        <button>Submit!</button>
+    </form>
+    <div id="root"></div>
+
+
     <script src="scripts/script.js"></script>
 </body>
+
 </html>

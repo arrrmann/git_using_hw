@@ -9,3 +9,10 @@
 #highlight + a > div{
     background-color: yellow
 }
+
+.form_div{
+    margin: 30px;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 30px;
+}

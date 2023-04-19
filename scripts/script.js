@@ -1,3 +1,4 @@
+const root=document.getElementById(`root`)
 const action = [{
     name: "phase1",
     info: "begining",
@@ -20,7 +21,16 @@ const action = [{
     danger: false
 }]
 
-for(act of action){
+function draw (){
+    for(act of action){
+     root.appendChild(drawAct(act))
+    }
+}
+
+
+draw()
+
+function drawAct (act){
     const link1 =document.createElement("a")
     link1.href = act.link
     if(act.danger){
@@ -39,10 +49,15 @@ for(act of action){
     img1.src = act.image
     container.appendChild(img1)
 
-    const info1 =document.createElement("p")
-    info1.innerHTML = act.info
-    container.appendChild(info1)
-     
-    const root=document.querySelector("body")
-     root.appendChild(link1)
+    // const link =document.createElement("a")
+    // link.innerHTML = act.link
+    // container.appendChild(link)
+
+    return link1
 }
+
+
+
+
+
+
